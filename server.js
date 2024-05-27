@@ -14,7 +14,7 @@ io.on('connection', function (socket) {
         io.emit("update", username + " has joined"); // Emit the "update" event to all connected clients
     });
 
-    socket.on("exituser", function (username) {
+    socket.on("exituser", function (username)  {
         io.emit("update", username + " has left"); // Emit the "update" event to all connected clients
     });
 
